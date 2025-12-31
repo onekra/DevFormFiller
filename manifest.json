@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Form Otomatik Doldurma Aracı",
+  "version": "1.0.0",
+  "description": "Web sayfalarındaki formları otomatik olarak test verileriyle dolduran Firefox eklentisi",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "webRequest",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Form Doldurma Aracı",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "commands": {
+    "toggle-fill-form": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+Shift+F"
+      },
+      "description": "Formu otomatik doldur"
+    }
+  }
+}

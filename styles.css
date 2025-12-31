@@ -1,0 +1,182 @@
+/* Modern Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+  background-color: #f5f5f7; /* Hafif Apple gri tonu */
+  padding: 10px;
+}
+
+.container {
+  width: 360px; /* Daha kompakt genişlik */
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Başlık */
+.header {
+  padding: 24px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f2;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.header .subtitle {
+  font-size: 13px;
+  color: #86868b;
+  margin-top: 4px;
+}
+
+/* İçerik Alanı */
+.content {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #86868b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+/* Domain Kartı */
+.domain-card {
+  background: #fbfbfd;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d2d2d7;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.domain-card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d1d1f;
+  word-break: break-all;
+}
+
+/* Butonlar */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary {
+  background-color: #0071e3; /* Saf Apple Mavisi */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0077ed;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3);
+}
+
+.btn-secondary {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  border: 1px solid #d2d2d7;
+}
+
+.btn-secondary:hover {
+  background-color: #e8e8ed;
+}
+
+/* Whitelist Listesi */
+.whitelist-container {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.whitelist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  border: 1px solid #f0f0f2;
+}
+
+.domain-name {
+  font-size: 13px;
+  color: #1d1d1f;
+}
+
+.btn-remove-item {
+  background: transparent;
+  color: #ff3b30;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Bilgi ve Kısayol */
+.footer-info {
+  text-align: center;
+  background: #f5f5f7;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.footer-info p {
+  font-size: 11px;
+  color: #86868b;
+  margin-top: 8px;
+}
+
+.shortcut-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #ffffff;
+  border: 1px solid #d2d2d7;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #1d1d1f;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 10px;
+}

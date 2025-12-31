@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Auto-Fill Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Form Auto-Fill Tool</h1>
+            <p class="subtitle">Improve your productivity</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-title">
+                    <span>📍 Current Site</span>
+                </div>
+                <div class="domain-card">
+                    <p id="currentDomain">Loading...</p>
+                </div>
+                <div class="button-group">
+                    <button id="whitelistBtn" class="btn btn-primary">Add to Whitelist</button>
+                    <button id="removeBtn" class="btn btn-secondary">Remove</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <span>✅ Whitelisted Domains</span>
+                </div>
+                <div id="whitelistContainer" class="whitelist-container">
+                    <p class="empty-message">No sites added yet.</p>
+                </div>
+            </div>
+
+            <div class="section footer-info">
+                <div class="shortcut-badge">
+                    ⌨️ <strong>Ctrl+Shift+F</strong>
+                </div>
+                <p>Use the shortcut to fill the form.</p>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
